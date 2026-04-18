@@ -17,6 +17,7 @@
     --text: #e8e6f0;
     --muted: #6b6880;
     --glow: rgba(255,60,31,0.18);
+    --golds: rgb(255, 162, 0);
   }
 
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -153,12 +154,12 @@
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(80px, 14vw, 200px);
     line-height: 0.88;
-    letter-spacing: -2px;
+    letter-spacing: 7px;
     position: relative;
     animation: fadeUp 0.8s 0.35s both;
   }
   .hero-title .line2 {
-    -webkit-text-stroke: 1.5px var(--glow);
+    -webkit-text-stroke: 1.5px var(--golds);
     color: transparent;
     display: block;
   }
@@ -171,8 +172,8 @@
     animation: fadeUp 0.8s 0.5s both;
   }
   .hero-desc {
-    max-width: 370px;
-    font-size: 17px;
+    max-width: 400px;
+    font-size: 14px;
     line-height: 1.8;
     color: var(--accent);
   }
