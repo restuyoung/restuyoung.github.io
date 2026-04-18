@@ -122,13 +122,8 @@
   .hero-bg {
     position: absolute; inset: 0;
     background-image: url("thumbnail/editor work.png");
-    mask-image: radial-gradient(ellipse 90% 80% at 70% 50%, black 0%, transparent 100%);
-  }
-  .hero-grid {
-    position: absolute; inset: 0;
-    background-size: 80px 80px;
-    opacity: 0.3;
-    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
+    background-position: center right;
+    mask-image: radial-gradient(ellipse 80% 95% at 70% 30%, black 0%, transparent 100%);
   }
 
   .hero-eyebrow {
@@ -154,7 +149,7 @@
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(80px, 14vw, 200px);
     line-height: 0.88;
-    letter-spacing: 10px;
+    letter-spacing: 7px;
     position: relative;
     animation: fadeUp 0.8s 0.35s both;
   }
@@ -163,7 +158,7 @@
     color: transparent;
     display: block;
   }
-  .hero-title .accent-word { color: var(--accent); }
+  .hero-title .accent-word { color: var(--glow); }
 
   .hero-bottom {
     display: flex; align-items: flex-end; justify-content: space-between;
@@ -175,7 +170,7 @@
     max-width: 400px;
     font-size: 17px;
     line-height: 1.8;
-    color: var(--golds);
+    color: var(--accent);
   }
   .hero-stats {
     display: flex; gap: 48px;
@@ -1005,7 +1000,7 @@
   <div class="hero-eyebrow">Video Editor — Motion Designer — Storyteller</div>
   <h1 class="hero-title">
     BALIE<br>
-    <span class="line2">L A B <span class="accent-word">S</span></span>
+    <span class="line2">LAB<span class="accent-word">S</span></span>
   </h1>
   <div class="hero-bottom">
     <p class="hero-desc">
