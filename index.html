@@ -114,18 +114,20 @@
   #hero {
     min-height: 100vh;
     display: flex; flex-direction: column; justify-content: flex-end;
-    padding: 20px 48px 72px;
+    padding: 0 48px 72px;
     position: relative;
     overflow: hidden;
   }
   .hero-bg {
     position: absolute; inset: 0;
     background-image: url("thumbnail/editor work.png");
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
   }
   .hero-grid {
     position: absolute; inset: 0;
-    background-size: 500px 500px;
+    background-size: 80px 80px;
     opacity: 1;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
   }
 
   .hero-eyebrow {
@@ -151,12 +153,12 @@
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(80px, 14vw, 200px);
     line-height: 0.88;
-    letter-spacing: 3px;
+    letter-spacing: -2px;
     position: relative;
     animation: fadeUp 0.8s 0.35s both;
   }
   .hero-title .line2 {
-    -webkit-text-stroke: 1.5px var(--text);
+    -webkit-text-stroke: 1.5px var(--glow);
     color: transparent;
     display: block;
   }
@@ -169,10 +171,10 @@
     animation: fadeUp 0.8s 0.5s both;
   }
   .hero-desc {
-    max-width: 340px;
-    font-size: 16px;
+    max-width: 370px;
+    font-size: 17px;
     line-height: 1.8;
-    color: var(--gold);
+    color: var(--accent);
   }
   .hero-stats {
     display: flex; gap: 48px;
